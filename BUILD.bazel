@@ -1,0 +1,12 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "multi_index",
+    visibility = ["//visibility:public"],
+    includes = ["include"],
+    hdrs = glob(["include/**/*.hpp"]),
+    srcs = glob(["src/**/*.cpp"]),
+    deps = [
+        "@boost//foreach",
+    ],
+)
