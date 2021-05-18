@@ -7,6 +7,6 @@ cc_library(
     hdrs = glob(["include/**/*.hpp"]),
     srcs = glob(["src/**/*.cpp"]),
     deps = [
-        "@boost//foreach",
+        "@boost//libs/foreach",
     ],
 )
